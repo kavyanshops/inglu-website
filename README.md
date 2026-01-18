@@ -1,70 +1,162 @@
-# Getting Started with Create React App
+# INGLU Marketing Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A pixel-perfect, responsive marketing website for INGLU - the Education, Enhancement, and Entertainment platform that connects colleges and brands.
 
-## Available Scripts
+## 🚀 Features
 
-In the project directory, you can run:
+- **3E Ecosystem Visualization**: Clear presentation of Education, Enhancement, and Entertainment pillars
+- **Responsive Design**: Optimized for Desktop (1440px), Tablet (768px), and Mobile (375px)
+- **Smooth Animations**: Scroll-triggered animations, micro-interactions, and hover effects
+- **Accessibility**: WCAG AA compliant, keyboard navigation, ARIA labels
+- **Performance Optimized**: Lazy loading, code splitting, optimized bundle size
 
-### `npm start`
+## 🛠 Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Framework**: React 18+ (Functional Components only)
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS with custom configuration
+- **Package Manager**: npm
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📁 Project Structure
 
-### `npm test`
+```
+my-app/
+├── src/
+│   ├── components/
+│   │   ├── sections/          # Page sections (Hero, Features, etc.)
+│   │   ├── ui/                # Reusable UI components
+│   │   └── common/            # Layout components
+│   ├── hooks/                 # Custom React hooks
+│   ├── styles/                # Global CSS and animations
+│   ├── utils/                 # Constants and helpers
+│   ├── App.jsx
+│   └── main.jsx
+├── public/
+│   └── favicon.svg
+├── index.html
+├── package.json
+├── tailwind.config.js
+├── postcss.config.js
+└── vite.config.js
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚦 Getting Started
 
-### `npm run build`
+### Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Node.js 18+
+- npm or yarn
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Navigate to the project directory:
+   ```bash
+   cd my-app
+   ```
 
-### `npm run eject`
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Build for Production
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+npm run build
+```
 
-## Learn More
+### Preview Production Build
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm run preview
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🎨 Design System
 
-### Code Splitting
+### Colors
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+| Color | Hex | Tailwind Class |
+|-------|-----|----------------|
+| Primary Dark | #0F172A | `inglu-dark` |
+| Secondary Dark | #1E293B | `inglu-slate` |
+| Education Blue | #2563EB | `inglu-blue` |
+| Enhancement Orange | #F97316 | `inglu-orange` |
+| Entertainment Purple | #A855F7 | `inglu-purple` |
+| Text Light | #F1F5F9 | `inglu-light` |
+| Text Secondary | #CBD5E1 | `inglu-text-secondary` |
+| Accent Cyan | #38BDF8 | `inglu-accent` |
 
-### Analyzing the Bundle Size
+### Typography
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **H1**: 56px / 32px mobile (bold)
+- **H2**: 44px / 28px mobile (bold)
+- **H3**: 32px (semibold)
+- **H4**: 24px (semibold)
+- **Body**: 16px (regular)
+- **Body Large**: 18px (regular)
+- **Body Small**: 14px (regular)
+- **Caption**: 12px (regular)
 
-### Making a Progressive Web App
+### Breakpoints
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- **Mobile**: 375px (base)
+- **Tablet**: 768px (md)
+- **Desktop**: 1024px (lg)
+- **Wide**: 1440px (xl)
 
-### Advanced Configuration
+## 📄 Components
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### UI Components
 
-### Deployment
+- `Button` - Multi-variant button with loading states
+- `Card` - Flexible card container
+- `FeatureCard` - Feature showcase card
+- `StatCard` - Animated statistics card
+- `TestimonialCard` - Quote and author card
+- `StepCard` - How it works step card
+- `PillarCard` - 3E pillar card
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Section Components
 
-### `npm run build` fails to minify
+- `Navigation` - Fixed header with mobile menu
+- `Hero` - Hero section with CTAs
+- `ThreePillars` - 3E ecosystem showcase
+- `MVPFeatures` - Live features grid
+- `ProductDemo` - Platform preview
+- `MarketStats` - Animated statistics
+- `HowItWorks` - Step-by-step guide
+- `Testimonials` - User testimonials
+- `CTASection` - Call to action
+- `Footer` - Footer with newsletter
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## ♿ Accessibility
+
+- Semantic HTML structure
+- ARIA labels on interactive elements
+- Keyboard navigation support
+- Focus indicators
+- Color contrast WCAG AA compliant
+- Skip to main content link
+
+## 📦 Performance
+
+- Lazy loading for below-fold sections
+- Code splitting with React.lazy()
+- Optimized images with loading="lazy"
+- Minimal bundle size with tree shaking
+- CSS purging with Tailwind
+
+## 📝 License
+
+© 2026 INGLU. All rights reserved.
+
+---
+
+Made with ❤️ by Team INGLU

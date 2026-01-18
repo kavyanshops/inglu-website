@@ -1,0 +1,10 @@
+export { default as Navigation } from './Navigation';
+export { default as Hero } from './Hero';
+export { default as ThreePillars } from './ThreePillars';
+export { default as MVPFeatures } from './MVPFeatures';
+export { default as ProductDemo } from './ProductDemo';
+export { default as MarketStats } from './MarketStats';
+export { default as HowItWorks } from './HowItWorks';
+export { default as Testimonials } from './Testimonials';
+export { default as CTASection } from './CTASection';
+export { default as Footer } from './Footer';
